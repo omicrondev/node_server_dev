@@ -41,7 +41,7 @@ app.get('/paypal/cib-sync', (req, res) => {
   console.log("redirect to ")
     
 res.writeHead(301, {
-      Location: `apps://paypal/cib-callback?code=${code}&state=${req.query['state']}`
+      Location: `apps://https://portail-entreprise.attijariwafa.net:5443/paypal/cib-callback`
       // Location: `http://www.example.com/gizmos`
       
     }).end();
